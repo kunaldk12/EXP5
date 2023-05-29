@@ -1,0 +1,9 @@
+1)
+javac *.java
+rmic PallinRemote
+rmiregistry
+2)
+java MyServer
+3)
+java MyClient
+refer

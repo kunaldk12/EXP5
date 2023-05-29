@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.rmi.*;  
+public class MyClient{  
+public static void main(String args[]){  
+try{  
+Pallin stub=(Pallin)Naming.lookup("PAL"); 
+Scanner s = new Scanner(System.in);
+System.out.println("Enter the string you want to check:");
+        String a = s.nextLine();
+
+if (stub.pallindrome(a)==true)
+{
+ System.out.println(" The given string is Pallindrome");  
+}
+else
+{
+System.out.println(" The given string is not Pallindrome");  
+}
+}catch(Exception e){}  
+}  
+}  s
